@@ -29,7 +29,7 @@ function errorLogin($error) {
         
         <!--INICIO SESIÓN-->
         <div class="form-content">
-            <form action="./confirm/login-confirm.php" method="POST">
+            <form action="login-confirm.php" method="POST">
                 <h2>Inicio Sesión</h2>
                 <?= errorLogin($error); ?>
                 <input type="email" name="email" id="email" placeholder="Nombre" required>

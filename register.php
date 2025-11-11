@@ -21,7 +21,7 @@ function mostrarError($error) {
 
 <div class="content">
     <div class="form-content">
-        <form action="./confirm/register-confirm.php" method="POST">
+        <form action="register-confirm.php" method="POST">
             <h2>Registro</h2>
             <?= mostrarError($error); ?>
 

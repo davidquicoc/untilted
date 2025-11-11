@@ -1,6 +1,12 @@
 <?php
 session_start();
-require_once './confirm/config.php';
+
+if (!isset($_SESSION['nombre'])) {
+    header("Location: login.php");
+    exit();
+}
+
+require_once 'config.php';
 
 // Obtener orden desde GET
 $orden = $_GET['orden'] ?? '';
